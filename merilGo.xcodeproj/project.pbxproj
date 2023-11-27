@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43081DF82B0E48B300AEF9CB /* merilGoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43081DF72B0E48B300AEF9CB /* merilGoApp.swift */; };
+		43081DFA2B0E48B300AEF9CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43081DF92B0E48B300AEF9CB /* ContentView.swift */; };
+		43081DFC2B0E48B600AEF9CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43081DFB2B0E48B600AEF9CB /* Assets.xcassets */; };
+		43081E002B0E48B600AEF9CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43081DFF2B0E48B600AEF9CB /* Preview Assets.xcassets */; };
+		43081E0A2B0E48B600AEF9CB /* merilGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43081E092B0E48B600AEF9CB /* merilGoTests.swift */; };
+		43081E142B0E48B600AEF9CB /* merilGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43081E132B0E48B600AEF9CB /* merilGoUITests.swift */; };
+		43081E162B0E48B600AEF9CB /* merilGoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43081E152B0E48B600AEF9CB /* merilGoUITestsLaunchTests.swift */; };
+		43081E232B10B84900AEF9CB /* MerilUIBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43081E222B10B84900AEF9CB /* MerilUIBase.swift */; };
+		43081E262B10CBC800AEF9CB /* BaseWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43081E252B10CBC800AEF9CB /* BaseWrapper.swift */; };
+		43081E2A2B10CD5C00AEF9CB /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = 43081E292B10CD5C00AEF9CB /* Property List.plist */; };
+		43081E312B10CFD700AEF9CB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43081E302B10CFD700AEF9CB /* LoginView.swift */; };
+		43081E332B10D7BB00AEF9CB /* UIAccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43081E322B10D7BB00AEF9CB /* UIAccountTests.swift */; };
+		43081E362B10DC6700AEF9CB /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43081E352B10DC6700AEF9CB /* MenuView.swift */; };
+		43081E382B10DD6B00AEF9CB /* UIMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43081E372B10DD6B00AEF9CB /* UIMenuTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43081E062B0E48B600AEF9CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43081DEC2B0E48B300AEF9CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43081DF32B0E48B300AEF9CB;
+			remoteInfo = merilGo;
+		};
+		43081E102B0E48B600AEF9CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43081DEC2B0E48B300AEF9CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43081DF32B0E48B300AEF9CB;
+			remoteInfo = merilGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		43081DF42B0E48B300AEF9CB /* merilGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = merilGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43081DF72B0E48B300AEF9CB /* merilGoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merilGoApp.swift; sourceTree = "<group>"; };
+		43081DF92B0E48B300AEF9CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		43081DFB2B0E48B600AEF9CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43081DFD2B0E48B600AEF9CB /* merilGo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = merilGo.entitlements; sourceTree = "<group>"; };
+		43081DFF2B0E48B600AEF9CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		43081E052B0E48B600AEF9CB /* merilGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = merilGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43081E092B0E48B600AEF9CB /* merilGoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merilGoTests.swift; sourceTree = "<group>"; };
+		43081E0F2B0E48B600AEF9CB /* merilGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = merilGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		43081E132B0E48B600AEF9CB /* merilGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merilGoUITests.swift; sourceTree = "<group>"; };
+		43081E152B0E48B600AEF9CB /* merilGoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = merilGoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		43081E222B10B84900AEF9CB /* MerilUIBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MerilUIBase.swift; sourceTree = "<group>"; };
+		43081E252B10CBC800AEF9CB /* BaseWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWrapper.swift; sourceTree = "<group>"; };
+		43081E292B10CD5C00AEF9CB /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		43081E302B10CFD700AEF9CB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		43081E322B10D7BB00AEF9CB /* UIAccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAccountTests.swift; sourceTree = "<group>"; };
+		43081E352B10DC6700AEF9CB /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		43081E372B10DD6B00AEF9CB /* UIMenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMenuTests.swift; sourceTree = "<group>"; };
+		438796902B149D6D00C696E2 /* config.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = config.yml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43081DF12B0E48B300AEF9CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43081E022B0E48B600AEF9CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43081E0C2B0E48B600AEF9CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43081DEB2B0E48B300AEF9CB = {
+			isa = PBXGroup;
+			children = (
+				43081DF62B0E48B300AEF9CB /* merilGo */,
+				43081E082B0E48B600AEF9CB /* merilGoTests */,
+				43081E122B0E48B600AEF9CB /* merilGoUITests */,
+				43081DF52B0E48B300AEF9CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43081DF52B0E48B300AEF9CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43081DF42B0E48B300AEF9CB /* merilGo.app */,
+				43081E052B0E48B600AEF9CB /* merilGoTests.xctest */,
+				43081E0F2B0E48B600AEF9CB /* merilGoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43081DF62B0E48B300AEF9CB /* merilGo */ = {
+			isa = PBXGroup;
+			children = (
+				43081DF72B0E48B300AEF9CB /* merilGoApp.swift */,
+				43081DF92B0E48B300AEF9CB /* ContentView.swift */,
+				43081DFB2B0E48B600AEF9CB /* Assets.xcassets */,
+				43081DFD2B0E48B600AEF9CB /* merilGo.entitlements */,
+				43081DFE2B0E48B600AEF9CB /* Preview Content */,
+			);
+			path = merilGo;
+			sourceTree = "<group>";
+		};
+		43081DFE2B0E48B600AEF9CB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				43081DFF2B0E48B600AEF9CB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		43081E082B0E48B600AEF9CB /* merilGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				43081E092B0E48B600AEF9CB /* merilGoTests.swift */,
+			);
+			path = merilGoTests;
+			sourceTree = "<group>";
+		};
+		43081E122B0E48B600AEF9CB /* merilGoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				43081E292B10CD5C00AEF9CB /* Property List.plist */,
+				43081E222B10B84900AEF9CB /* MerilUIBase.swift */,
+				43081E2C2B10CE4E00AEF9CB /* Tests */,
+				43081E2B2B10CE4300AEF9CB /* Views */,
+				43081E242B10CBB100AEF9CB /* Wrappers */,
+			);
+			path = merilGoUITests;
+			sourceTree = "<group>";
+		};
+		43081E242B10CBB100AEF9CB /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				43081E252B10CBC800AEF9CB /* BaseWrapper.swift */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		43081E2B2B10CE4300AEF9CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				43081E342B10DC2200AEF9CB /* Menu */,
+				43081E2D2B10CFA400AEF9CB /* Login */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		43081E2C2B10CE4E00AEF9CB /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				43081E322B10D7BB00AEF9CB /* UIAccountTests.swift */,
+				43081E152B0E48B600AEF9CB /* merilGoUITestsLaunchTests.swift */,
+				43081E132B0E48B600AEF9CB /* merilGoUITests.swift */,
+				43081E372B10DD6B00AEF9CB /* UIMenuTests.swift */,
+				438796902B149D6D00C696E2 /* config.yml */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		43081E2D2B10CFA400AEF9CB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				43081E302B10CFD700AEF9CB /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		43081E342B10DC2200AEF9CB /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				43081E352B10DC6700AEF9CB /* MenuView.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43081DF32B0E48B300AEF9CB /* merilGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43081E192B0E48B600AEF9CB /* Build configuration list for PBXNativeTarget "merilGo" */;
+			buildPhases = (
+				43081DF02B0E48B300AEF9CB /* Sources */,
+				43081DF12B0E48B300AEF9CB /* Frameworks */,
+				43081DF22B0E48B300AEF9CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = merilGo;
+			productName = merilGo;
+			productReference = 43081DF42B0E48B300AEF9CB /* merilGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43081E042B0E48B600AEF9CB /* merilGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43081E1C2B0E48B600AEF9CB /* Build configuration list for PBXNativeTarget "merilGoTests" */;
+			buildPhases = (
+				43081E012B0E48B600AEF9CB /* Sources */,
+				43081E022B0E48B600AEF9CB /* Frameworks */,
+				43081E032B0E48B600AEF9CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43081E072B0E48B600AEF9CB /* PBXTargetDependency */,
+			);
+			name = merilGoTests;
+			productName = merilGoTests;
+			productReference = 43081E052B0E48B600AEF9CB /* merilGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		43081E0E2B0E48B600AEF9CB /* merilGoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43081E1F2B0E48B600AEF9CB /* Build configuration list for PBXNativeTarget "merilGoUITests" */;
+			buildPhases = (
+				43081E0B2B0E48B600AEF9CB /* Sources */,
+				43081E0C2B0E48B600AEF9CB /* Frameworks */,
+				43081E0D2B0E48B600AEF9CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43081E112B0E48B600AEF9CB /* PBXTargetDependency */,
+			);
+			name = merilGoUITests;
+			productName = merilGoUITests;
+			productReference = 43081E0F2B0E48B600AEF9CB /* merilGoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43081DEC2B0E48B300AEF9CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					43081DF32B0E48B300AEF9CB = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					43081E042B0E48B600AEF9CB = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 43081DF32B0E48B300AEF9CB;
+					};
+					43081E0E2B0E48B600AEF9CB = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 43081DF32B0E48B300AEF9CB;
+					};
+				};
+			};
+			buildConfigurationList = 43081DEF2B0E48B300AEF9CB /* Build configuration list for PBXProject "merilGo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43081DEB2B0E48B300AEF9CB;
+			productRefGroup = 43081DF52B0E48B300AEF9CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43081DF32B0E48B300AEF9CB /* merilGo */,
+				43081E042B0E48B600AEF9CB /* merilGoTests */,
+				43081E0E2B0E48B600AEF9CB /* merilGoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43081DF22B0E48B300AEF9CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43081E002B0E48B600AEF9CB /* Preview Assets.xcassets in Resources */,
+				43081DFC2B0E48B600AEF9CB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43081E032B0E48B600AEF9CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43081E0D2B0E48B600AEF9CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43081E2A2B10CD5C00AEF9CB /* Property List.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43081DF02B0E48B300AEF9CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43081DFA2B0E48B300AEF9CB /* ContentView.swift in Sources */,
+				43081DF82B0E48B300AEF9CB /* merilGoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43081E012B0E48B600AEF9CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43081E0A2B0E48B600AEF9CB /* merilGoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43081E0B2B0E48B600AEF9CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43081E362B10DC6700AEF9CB /* MenuView.swift in Sources */,
+				43081E262B10CBC800AEF9CB /* BaseWrapper.swift in Sources */,
+				43081E382B10DD6B00AEF9CB /* UIMenuTests.swift in Sources */,
+				43081E332B10D7BB00AEF9CB /* UIAccountTests.swift in Sources */,
+				43081E162B0E48B600AEF9CB /* merilGoUITestsLaunchTests.swift in Sources */,
+				43081E232B10B84900AEF9CB /* MerilUIBase.swift in Sources */,
+				43081E312B10CFD700AEF9CB /* LoginView.swift in Sources */,
+				43081E142B0E48B600AEF9CB /* merilGoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43081E072B0E48B600AEF9CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43081DF32B0E48B300AEF9CB /* merilGo */;
+			targetProxy = 43081E062B0E48B600AEF9CB /* PBXContainerItemProxy */;
+		};
+		43081E112B0E48B600AEF9CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43081DF32B0E48B300AEF9CB /* merilGo */;
+			targetProxy = 43081E102B0E48B600AEF9CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		43081E172B0E48B600AEF9CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43081E182B0E48B600AEF9CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		43081E1A2B0E48B600AEF9CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = merilGo/merilGo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"merilGo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MeRilGo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehrenetest.merilGo.merilGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43081E1B2B0E48B600AEF9CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = merilGo/merilGo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"merilGo/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MeRilGo;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehrenetest.merilGo.merilGo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		43081E1D2B0E48B600AEF9CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehrenetest.merilGo.merilGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/merilGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/merilGo";
+			};
+			name = Debug;
+		};
+		43081E1E2B0E48B600AEF9CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehrenetest.merilGo.merilGoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/merilGo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/merilGo";
+			};
+			name = Release;
+		};
+		43081E202B0E48B600AEF9CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehrenetest.merilGo.merilGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = merilGo;
+			};
+			name = Debug;
+		};
+		43081E212B0E48B600AEF9CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mehrenetest.merilGo.merilGoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = merilGo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43081DEF2B0E48B300AEF9CB /* Build configuration list for PBXProject "merilGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43081E172B0E48B600AEF9CB /* Debug */,
+				43081E182B0E48B600AEF9CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		43081E192B0E48B600AEF9CB /* Build configuration list for PBXNativeTarget "merilGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43081E1A2B0E48B600AEF9CB /* Debug */,
+				43081E1B2B0E48B600AEF9CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		43081E1C2B0E48B600AEF9CB /* Build configuration list for PBXNativeTarget "merilGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43081E1D2B0E48B600AEF9CB /* Debug */,
+				43081E1E2B0E48B600AEF9CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		43081E1F2B0E48B600AEF9CB /* Build configuration list for PBXNativeTarget "merilGoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43081E202B0E48B600AEF9CB /* Debug */,
+				43081E212B0E48B600AEF9CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43081DEC2B0E48B300AEF9CB /* Project object */;
+}

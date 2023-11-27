@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Default localization</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>Bundle Identifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>Bundle name</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>Bundle OS Type code</key>
+	<string>$(PRODUCT_PACKAGE_BUNDLE_TYPE)</string>
+	<key>Bundle version string (short)</key>
+	<string>1.0</string>
+	<key>Bundle version</key>
+	<string>1</string>
+</dict>
+</plist>
