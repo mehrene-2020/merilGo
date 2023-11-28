@@ -1,1 +1,136 @@
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//EXECUTORS
+executors:
+    xcode: '14.2.0'
+
+//PARAMETERS
+
+parameters:
+  nightly_sutomation_run:
+    default: false
+    type: boolean
+
+//COMMANDS
+
+commands:
+
+  checkout_project:
+    description: "checks out the project"
+    steps:
+     -checkout:
+        path: /iOSProjectPath(root folder name)
+
+  connect_to_firebase_and_initiate_run_device:
+  description: "connect to google and transfer files"
+  parameters:
+    model:
+        type:"string"
+        default:"iphone8"
+    xcode_version:
+        type:"string"
+        default:"14.3"
+    ios_version:
+        type:"string"
+        default:"16.6"
+  steps:
+   -attach_workspace:
+    at: /iOSProjectPath(root folder name)
+   -run:
+    command:
+    
+slack_messages:
+
+//WORKFLOWS
+
+workflows:
+    version: 2
+    
+    pushed_branch:
+        jobs:
+         -build_autoamtion_parameterized_smoke_test:
+            command:"ui_automation_smoke_test"
+            filters:
+                branches:
+                    ignore:
+                        - /releases/.*/
+        - initiate_firebase_device_lab_user_test_run:
+            requires:
+                - build_autoamtion_parameterized_smoke_test
+
+//AUTOMATION
+
+smoke_test_run:
+    job:
+     -build_autoamtion_parameterized_smoke_test
+        command:"ui_automation_user_test"
+            filters:
+                branches:
+                    only:
+                        - develop
+    - initiate_firebase_device_lab_user_test_run:
+        requires:
+            - build_autoamtion_parameterized_smoke_test
+            
+nightly_automation_menu_smoke_test:
+    triggers:
+        - schedule:
+            //RUN MON _ FRI 1AMUTC == CRON JOB is going to be deifned here
+            cron: "0 5 *  * 1-5"
+            filters:
+                branches:
+                    only:
+                     -develop
+    jobs:
+     -build_autoamtion_parameterized_smoke_test
+        command:"ui_automation_smoke_test"
+            filters:
+                branches:
+                    ignore:
+                        - /releases/.*/
+        - initiate_firebase_device_lab_menu_test_run:
+            requires:
+                - build_autoamtion_parameterized_smoke_test
+      
+//JOBS
+
+jobs:
+initiate_firebase_device_lab_menu_test_run:
+    docker:
+         - image: google/cloud-sdk
+    steps:
+        - connect_to_firebase_and_initiate_run_device:
+            model: "iphone11pro"
+            xcode_version: "14.3"
+            ios_version: "16.6"
+        -slack_messages:
+            message: "- Menutests result"
+            
+            
+build_automation_parameterized_smoke_test:
+  <<: *defaults
+  parameters:
+   command:
+    type: string
+    default: “ui_automation_links_test”
+  steps:
+   - checkout_project
+   - install_rosetta
+   - install_bundler_dependencies
+   - setup_project_dependancies
+   - pull_crowdin_translations
+   - run:
+     name: run UI clear files command
+     command: /bin/bash qa/<< parameters.command >>.sh
+   - generate_project
+   - setup_cocoapods
+   - fastlane_run:
+     fastlane_lane: buildUIAutomationPackage
+   - store_artifacts:
+     path: ~/iOSProject/UIAutoFiles/
+   - persist_to_workspace:
+         root: ~/iOSProject
+         paths:
+           - ./UIAutoFiles/*
 
